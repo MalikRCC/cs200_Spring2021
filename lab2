@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <script>
+      //alert(first);
+      //alert(last);
+      var first = "Malik";
+      var last = "Hickman";
+      let x = 17;
+      alert(x);
+      let y = "A";
+      alert(y);
+      credits = 62;           
+      alert(credits);
+      grades = 0
+      numberofCOURSES = 0
+      
+      function one(p1, p2, p3, p4)
+      {
+        var result = gradeInput(prompt("Enter a grade 1-4"));
+        return result;
+      }
+      function getGPA
+      {
+        return
+      }
+    </script>
+    <style>
+    </style>
+  </head>
+  <body>
+  </body>
+</html>
