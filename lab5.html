@@ -14,23 +14,17 @@
         }
         else{
          alert("Incorrect");
-        } 
+        }
+       try{ 
         if(number > 10) throw "invalid number";
-        {
-          alert("invalid number");
-        }
         if(number > 3) throw "too high";
-        {
-          alert("too high");
-        }
         if(number < 3) throw "too low";
-        {
-          alert("too low");
-        }
-        catch(err) {
+        if(number == "")  throw "is Empty";
+       }
+       catch(err) {
          message.innerHTML = "userinput" + err;
         }
-     }
+      }
     </script>
   </head>
   <body>
