@@ -14,13 +14,19 @@
         }
         else{
          alert("Incorrect");
-        }
-       try{ 
+        } 
         if(number > 10) throw "invalid number";
+        {
+          alert("invalid number");
+        }
         if(number > 3) throw "too high";
+        {
+          alert("too high");
+        }
         if(number < 3) throw "too low";
-        if(number == "")  throw "is Empty";
-       }
+        {
+          alert("too low");
+        }
        catch(err) {
          message.innerHTML = "userinput" + err;
         }
@@ -33,7 +39,6 @@
       <h2 style="color:blue;font-size:18px;"</h2>
      <input type="text" id="userinput"></input><br>
     <input type="button" value="guess" onClick="guessTheNumber()"></input>
-    <input type="number" id="userinput"></input><br>
     <IMG src=Matrix-Numbers.jpg style="width:400px;height:400px;">
   </body>
 </html>
