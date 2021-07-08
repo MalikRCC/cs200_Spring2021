@@ -28,16 +28,13 @@
     }
       
       function checkGuess() {
-       let userGuess = Number(guessField.value);
-       if (guessCount === 1) {
-         guesses.textContent = 'Previous guesses: ';
-         
-          else if{ (guessCount === 10)
-          lastResult.textContent = '!!!GAME OVER!!!';
-          lowOrHi.textContent = '';
-          setGameOver();
-          }
-        }
+       var userGuess = Number(guessField.value);
+       guesses.innerHTML += userGuess + " ";
+
+  if(guessCount == 10) {
+    lastResult.innerHTML = "!!!GAME OVER!!!";
+    disableForm();
+  }
     </script>
   </head>
   <body>
