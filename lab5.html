@@ -28,9 +28,11 @@
     }
       
      
-      var randNum = Math.floor((Math.random() * highLimit) + 1);
-      var allowedGuesses = 10;
-      var limit = 10;
+        var highLimit = 5;
+        var randNum = Math.floor((Math.random() * highLimit) + 1);
+        var allowedGuesses = 10;
+        var numGuesses = 0;
+
 
         function guessingGame() {
             if(allowedGuesses==limit)
