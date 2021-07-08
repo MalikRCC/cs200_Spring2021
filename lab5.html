@@ -24,11 +24,21 @@
        catch(err) {
          document.getElementById("userinput").value=err;
         }
-       while number_of_guesses < 5:
-       guess = int(input())
-       number_of_guesses += 1
+         
         }
       }
+      
+      function checkGuess() {
+       let userGuess = Number(guessField.value);
+       if (guessCount === 1) {
+         guesses.textContent = 'Previous guesses: ';
+         
+          else if (guessCount === 10) {
+          lastResult.textContent = '!!!GAME OVER!!!';
+          lowOrHi.textContent = '';
+          setGameOver();
+          }
+        }
     </script>
   </head>
   <body>
