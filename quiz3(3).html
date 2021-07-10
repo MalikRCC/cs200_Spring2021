@@ -1,7 +1,8 @@
 <html>
   <head>
     <script>
-      var myTimer = setInterval(Grow, 5000);
+      var myTimer = setInterval(Grow, 1000);
+      var c = 5;
       
       function Grow()
       {
@@ -10,6 +11,12 @@
         newH3.appendChild(newContent);
         const currentH3 = document.getElementById("h1");
         document.body.insertBefore(newH3, currentH3);
+        if (c==0)
+        {
+          clearInterval(myTimer);
+          alert("Reached 5 seconds");
+        }
+        
 
         
       }
