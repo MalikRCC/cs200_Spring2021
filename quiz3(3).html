@@ -1,16 +1,23 @@
 <html>
   <head>
     <script>
-      setInterval(myTimer, 5000);
+      var myTimer = setInterval(Grow, 5000);
       
-      function myTimer()
+      function Grow()
       {
-        const d = new Header();
-        document.getELementById("third").innerHtml = d.LocaleTimeString();
+        const newH3 = document.createElement("h3");
+        const newContent = document.createTextNode("Hi Mr. Dillion");
+        newH3.appendChild(newContent);
+        const currentH3 = document.getElemnetById("h1");
+        document.body.insertBefore(newH3, currentH3);
+
+        
       }
     </script>
     <style>
     </style>
   <body>
+    <button onclick="Grow()">Start counter</button>
+    <button onclick="clearInterval(myTimer)"> Stop counter</button>
   </body>
 <htnl>
