@@ -42,18 +42,11 @@
          clcikHandler[i].style.background = 'orange';
            }
       
-      const d = document.querySelector('d');
+      const d = document.querySelector('.d');
       d.addEventListener('click', clickHandler);
            addEvent(d, 'click', function(event) {
               console.log('Button Clicked');
-         var check,
-           element = document.getElementById('preview');
-          if (element != null) {
-               check = element.value;
-           }
-            else {
-                  check = null;
-           }
+        
              
          
            });
