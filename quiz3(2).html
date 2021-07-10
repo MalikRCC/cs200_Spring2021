@@ -13,11 +13,22 @@
       
       function colorChange()
       {
-       var spanElements = document.getElementsByTagName('p');
+       var changeElements = document.getElementsByTagName('p');
        for (var i = 0; i < spanElements.length; i++) {
        spanElements[i].style.background = 'green';
        }
       
+      }
+      
+      function sliderInput()
+      {
+        var number = 7;
+        var textTag = document.getElementById("myinput")
+        var text = textTag.value;
+        if(text==number)
+        {
+         alert("OnchangeEvent")
+        }
       }
 
     
@@ -39,5 +50,7 @@
     </p>
     <button onclick="colorChange()" id="Delta Italics">Delta</button>
     <body onload="plzWork()" id="Delta">Delta</button>
+    <input type="text" id="myinputut><br>
+    <input type="button" value="guess" onClick="sliderInput()"></input>
     </body>
 </html>
