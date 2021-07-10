@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <script>
+      function plzWork()
+      {
+      var push = document.getElementById("capitol");
+      push.onclick = function(){colorChange();};
+      
+      }
+
+      
+      
+      function colorChange()
+      {
+       tmp = document.getElementsByName("capitol")
+       tmp.style.color="white";
+      }
+
+    
+      
+
+    </script>
+    <style>
+      .saiyan {
+               background-color: Orange;
+               background-size: 50% auto
+               height: 100%;
+               font-style:bold; 
+       }
+
+      .city {
+             background-color: Red;
+             background-size: 50% auto
+             height: 100%
+             font-style:italic;
+             
+       } 
+
+       button {color:purple;}
+       button.Delta {color:red;}
+       button[name="push"] {font-style:italic}
+    </style>  
+  </head>
+  <body>
+    <h1>Show</h1>
+    <p class="saiyan" id="strong" name="goku">
+      Goku is a strong saiayn in dragon ball Z.
+    </p>
+
+    <h2>Japan</h2>    
+    <p class="city" id="capitol" name="Tokyo">
+      Tokyo is the captol city of Japan
+    </p>
+
+    <button id="click" name="push">Delta</button>
+    <button onclick="colorChange('style turned white')" id="Delta italics">Delta</button>
+    <body onload="plzWork('style turned white')" id="Delta">Delta</button>
+    </body>
+</html>
