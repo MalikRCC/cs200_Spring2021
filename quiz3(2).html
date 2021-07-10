@@ -46,6 +46,15 @@
       d.addEventListener('click', clickHandler);
            addEvent(d, 'click', function(event) {
               console.log('Button Clicked');
+         var check,
+           element = document.getElementById('preview');
+          if (element != null) {
+               check = element.value;
+           }
+            else {
+                  check = null;
+           }
+             
          
            });
          }
