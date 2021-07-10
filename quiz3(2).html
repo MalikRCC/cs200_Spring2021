@@ -30,6 +30,21 @@
          alert("OnchangeEvent");
         }
       }
+      
+      function clickHandler(event)
+      {
+        var styleChange = document.getElementById("sweet");
+         for (var i = 0; i < clickHandler.lenght; i++) {
+         clcikHandler[i].style.background = 'purple';
+        var  mustChange= document.getelementById("salty");
+           for (var i = 0; i < clickHandler.lenght; i++) {
+         clcikHandler[i].style.background = 'orange';
+      }
+      
+      const d = document.querySelector('.d);
+      d.addEventListener('click', clickHandler); 
+       console.log('Button Clicked');
+      });
 
     
       
@@ -42,9 +57,13 @@
     </style>  
   </head>
   <body>
+    <h1 id="sweet" Good >
+    </h1>
     <p id="alter" name="malik">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tincidunt ornare massa eget egestas purus viverra accumsan in. Risus viverra adipiscing at in tellus integer feugiat. Venenatis cras sed felis eget velit aliquet sagittis id consectetur. Risus in hendrerit gravida rutrum quisque non tellus orci. Aliquam eleifend mi in nulla posuere sollicitudin. Nam aliquam sem et tortor. Lorem mollis aliquam ut porttitor leo a diam. Scelerisque varius morbi enim nunc faucibus a. Senectus et netus et malesuada fames ac turpis egestas. In mollis nunc sed id semper. Dictum varius duis at consectetur lorem. Suspendisse sed nisi lacus sed viverra. Mauris cursus mattis molestie a iaculis at erat. Mattis nunc sed blandit libero volutpat sed cras ornare arcu. Dictum at tempor commodo ullamcorper a lacus vestibulum sed. Ornare aenean euismod elementum nisi quis eleifend quam adipiscing vitae.
-    </p>   
+    </p>
+    <h2 id="salty" Morning>
+    </h2>
     <p id="alter2" name="hickman">
       Id cursus metus aliquam eleifend mi. Ultrices dui sapien eget mi proin sed. Eu tincidunt tortor aliquam nulla facilisi cras. Tincidunt augue interdum velit euismod in pellentesque massa placerat duis. Interdum varius sit amet mattis vulputate enim. Nec feugiat in fermentum posuere urna nec tincidunt. Sapien faucibus et molestie ac feugiat sed. Elit at imperdiet dui accumsan. Ut porttitor leo a diam sollicitudin tempor id eu nisl. Sodales ut eu sem integer vitae justo eget. Sed elementum tempus egestas sed sed risus pretium quam. Lectus magna fringilla urna porttitor rhoncus dolor. Mauris cursus mattis molestie a iaculis at erat pellentesque. Odio ut sem nulla pharetra diam sit amet nisl suscipit. Aliquet sagittis id consectetur purus ut. Eu consequat ac felis donec et odio pellentesque. Et netus et malesuada fames ac turpis egestas maecenas. In hendrerit gravida rutrum quisque non. Faucibus pulvinar elementum integer enim neque volutpat. Sit amet nisl suscipit adipiscing bibendum est ultricies integer quis.
     </p>
@@ -52,5 +71,6 @@
     <body onload="plzWork()" id="Delta">Delta</button>
     <input type="text" id="myinput"></input><br>
     <input type= "button" value="enter7" onclick="sliderInput()"></input>
+<input type="button"value="handler"onclick="clickHandler()"></input>  
   </body>
 </html>
