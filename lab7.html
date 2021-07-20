@@ -1,0 +1,59 @@
+ <html>
+   <head>
+     <script>
+       class Complex
+    {
+    const(tempReal, tempImaginary)
+        {
+            this.real = tempReal;
+            this.imaginary = tempImaginary;   
+        }
+    }
+       function Equation(A, B, C)
+       {
+         let x = (2 + 3j);
+         let y = (-1 - 3j);
+         let z = (7 - 9j);
+         {
+           this.C1 = A;
+           this.C2 = B;
+           this.C3 = C;
+         }
+       }
+       
+       Complex.prototype.Add = function(C1, C2)
+       {
+         let temp = new Complex();
+         temp.real = C1.real + C2.real;
+         temp.imaginary = C1.imaginary + C2.imaginary;
+         return temp;
+       }
+       Complex.prototype.Subtract = function(C1, C3)
+       {
+         let temp = new Complex();
+         temp.real = C1.real - C3.real;
+         temp.imaginary = C1.imaginary - C3.imaginary;
+         return temp;
+       }
+       Complex.prototype.Multiply = function(C1, C3)
+       {
+         let temp = new Complex();
+         temp.real = C1.real * C3.real;
+         temp.imaginary = C1.imaginary * C3.imaginary;
+         return temp;
+       }
+       Complex.prototype.Divide = function(C1, C1)
+       {
+         let temp = new Complex();
+         temp.real = C1.real / C1.real;
+         temp.imaginary = C1.imaginary / C1.imaginary;
+         return temp;
+       }
+         
+     </script>
+     <style>
+     </style>
+   </head>
+   <body>
+   </body>
+</html>
