@@ -19,8 +19,8 @@
        }
        Complex.prototype.Subtract = function(otherComp)
        {
-         var.real = this.real - otherComp.real;
-         var.imag = this.imaginary - otherComp.imaginary;
+         var.real = this.real + otherComp.real;
+         var.imag = this.imaginary + otherComp.imaginary;
          return new Complex(real, imag);
        }
        Complex.prototype.Multiply = function(otherComp)
