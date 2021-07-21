@@ -19,20 +19,20 @@
        }
        Complex.prototype.Subtract = function(otherComp)
        {
-         var.real = this.real + otherComp.real;
-         var.imag = this.imaginary + otherComp.imaginary;
+         var real = this.real - otherComp.real;
+         var imag = this.imaginary - otherComp.imaginary;
          return new Complex(real, imag);
        }
        Complex.prototype.Multiply = function(otherComp)
        {
-         var.real = this.real * otherComp.real;
-         var.imag = this.imaginary * otherComp.imaginary;
+         var real = this.real * otherComp.real;
+         var imag = this.imaginary * otherComp.imaginary;
          return new Complex(real, imag);
        }
        Complex.prototype.Divide = function(otherComp)
        {
-         var.real = var.real / otherComp.real;
-         var.imaginary = var.imaginary / otherComp.imaginary;
+         var real = this.real / otherComp.real;
+         var imag = this.imaginary / otherComp.imaginary;
          return new Complex(real, imag);
        }
        let C1 = new Complex(2, 3);
