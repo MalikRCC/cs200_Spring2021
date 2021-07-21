@@ -45,9 +45,9 @@
            var y = ('-1 - 3j');
            var z = ('7 - 9j');
           {
-            this.C1 = A;
-            this.C2 = B;
-            this.C3 = C;
+            this.C1 = 2 + 3j;
+            this.C2 = -1 - 3j;
+            this.C3 = 7 - 9j;
           }
         }
       
@@ -68,9 +68,10 @@
                            + C3.real - " + i"
                            + C3.imaginary-"<br>");
                                          }
-     C1.Add(C2).Print = function()
-     C1.Multiply(C3).Print = function()
-     C1.Divide(C1).Print = function()
+     C1.Add(C2).Print = function(){}
+     C1.Subtract(C3).Print = function(){}
+     C1.Multiply(C3).Print = function(){}
+     C1.Divide(C1).Print = function(){}
      
       var answer = Complex.portotype.Add(C1, C2);
       var answer = Complex.prototype.Subtract(C1, C3);
