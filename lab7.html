@@ -68,16 +68,20 @@
                            + C3.real - " + i"
                            + C3.imaginary-"<br>");
                                          }
-     C1.Add(C2).Print = function(){}
-     C1.Subtract(C3).Print = function(){}
-     C1.Multiply(C3).Print = function(){}
-     C1.Divide(C1).Print = function(){}
+     C1.Add(C2).Print = function(){
+        var answer = Complex.prototype.Add(C1, C2);
+     }
+     C1.Subtract(C3).Print = function(){
+       var answer = Complex.prototype.Subtract(C1, C3);
+     }
+     C1.Multiply(C3).Print = function(){
+       var answer = Complex.prototype.Multiply(C1, C3);
+     }
+     C1.Divide(C1).Print = function(){
+       var answer = Complex.prototype.Divide(C1, C1);
+     }
      
-      var answer = Complex.prototype.Add(C1, C2);
-      var answer = Complex.prototype.Subtract(C1, C3);
-      var answer = Complex.prototype.Multiply(C1, C3);
-      var answer = Complex.prototype.Divide(C1, C1);
-      
+   
          
      </script>
      <style>
