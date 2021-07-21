@@ -25,15 +25,16 @@
        }
        Complex.prototype.Multiply = function(otherComp)
        {
-         var real = this.real * otherComp.real;
-         var imag = this.imaginary * otherComp.imaginary;
+         var real = (this.real * otherComp.real) - (this.imaginary * otherComp.imaginary);
+         var imag = (this.real * otherComp.imaginary) + (this.imaginary * otherComp.real);
          return new Complex(real, imag);
        }
        Complex.prototype.Divide = function(otherComp)
        {
-         var real = this.real / otherComp.real;
-         var imag = this.imaginary / otherComp.imaginary;
-         return new Complex(real, imag);
+        var denom = this.imaginary * otherComp.imaginary + otherComp.real * otherComp.real;
+        var real = (this.real * otherComp.real + this.imaginary * otherComp.imaginary) /denom;
+        var imaginary = (otherComp.real * this.imaginary - this.real * otherComp.imaginary) /denom; 
+        return new Complex(real, imag);
        }
        let C1 = new Complex(2, 3);
        let C2 = new Complex(-1, -3);
