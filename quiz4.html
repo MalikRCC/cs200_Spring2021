@@ -8,8 +8,9 @@
         var number = 11;
         var textTag = document.getElementById("input");
         var text=textTag.value;
-        try {
-              if(isNaN(x))  throw "Parameter is not a number";
+        if(isNaN(x))
+        {
+          throw "Parameter is not a number";
        }
        else
        {
