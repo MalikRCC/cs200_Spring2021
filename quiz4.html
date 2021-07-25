@@ -5,19 +5,31 @@
     <script>
       function CauseError(p1)
       {
-        var number = x;
+        var number = 11;
         var textTag = document.getElementById("input");
         var text=textTag.value;
-        if (isNaN(x))
+        try {
+              if(isNaN(x)  throw "Parameter is not a number";
+       }
+       else
+       {
+         alert ("The Number is")
+       }
+        
+       function CatchError(p2)
         {
-          throw "Value is not a number";
+          CauseError.call = function(p1)
+          {
+            catch(err) {
+              document.getElementById("demo").innerHtml = err.message;
+            }
+          }
         }
-        else
-        {
-          alert("The numbe is");
-        }
-      }
-       
+              
+          
+          
+          
+          
       
     </script>
   </head>
