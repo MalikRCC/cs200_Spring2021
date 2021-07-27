@@ -13,19 +13,13 @@
         
         var ctx = cv.getContext("2d");
         ctx.fillStyle = 'teal';
-        
+        ctx.fillRect(0, 0, cv.width, cv.height);
         ctx.moveTo(0, 0);
         ctx.lineTo(200, 100);
         ctx.stroke();
        
       } 
-      
-      function mouseMove(event)
-      {
-       var cv_x = event.pageX;
-       var cv_y = event.pageY;
-       alert("X=" + cv_x + "Y=" + cv_y);
-      }
+     
     </script>
   </head>
   <body onload="webpage()">
