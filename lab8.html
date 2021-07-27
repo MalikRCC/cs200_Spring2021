@@ -26,7 +26,7 @@
       {
         cv.addEventListener("onClick", function(perform) {
           var x = perform.pageX - ctxLeft,
-          var y = perform.pageY - ctxTop;
+           y = perform.pageY - ctxTop;
           elements.forEach(function(element) {
           if (y > element.top && y < element.top + element.height 
              && x > element.left && x < element.left + element.width) {
