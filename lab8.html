@@ -6,12 +6,12 @@
       function webpage()
       {
         var cv = document.getElementById("litCanvas");
-        var ctx = cv.getContext("2d");
         cv.style.width=300;
         cv.style.height=300;
         cv.style.backgroundColors="#FF0000;"
         cv.style="border:1px solid #000000;"
         
+        var ctx = cv.getContext("2d");
         ctx.moveTo(0, 0);
         ctx.lineTo(200, 100);
         ctx.stroke();
