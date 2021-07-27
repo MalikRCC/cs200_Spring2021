@@ -9,7 +9,7 @@
         cv.style.width=300;
         cv.style.height=300;
         cv.style="border:1px solid #000000;"
-        cv.addEventListener("onclick", mouseMove, false);
+        cv.addEventListener("onclick", moveMouse, false);
         
         var ctx = cv.getContext("2d");
         ctx.fillStyle = 'teal';
@@ -19,6 +19,13 @@
         ctx.stroke();
        
       } 
+      
+      function moveMouse(event)
+      {
+        cv_x = event.pageX;
+        cv_y = event.pageY;
+        alert("X=" + cv_x + "Y=" + cv_y);
+      }
      
     </script>
   </head>
