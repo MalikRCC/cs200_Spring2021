@@ -8,10 +8,11 @@
         var cv = document.getElementById("litCanvas");
         cv.style.width=300;
         cv.style.height=300;
-        cv.style="#008080;"
         cv.style="border:1px solid #000000;"
         
         var ctx = cv.getContext("2d");
+        ctx.fillStyle = "blue";
+        ctx.fillRect(300, 300, cv.width, cv.height);
         ctx.moveTo(0, 0);
         ctx.lineTo(200, 100);
         ctx.stroke();
