@@ -9,7 +9,9 @@
         cv.style.width=300;
         cv.style.height=300;
         cv.style="border:1px solid #000000;"
-        cv.addEventListener("onclick", moveMouse, false);
+        cvLeft = cv.offsetLeft + elem.clientLeft,
+        cvTop = cv.osetTop + elem.clientTop,
+        cv.addEventListener("onclick", function(moveMouse);
         
         var ctx = cv.getContext("2d");
         ctx.fillStyle = 'teal';
