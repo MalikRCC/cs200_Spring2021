@@ -12,11 +12,15 @@
         cv.addEventListener("onclick", moveMouse, false);
         
         var ctx = cv.getContext("2d");
+        var ctx2 = cv.getContext("2d");
         ctx.fillStyle = 'teal';
         ctx.fillRect(0, 0, cv.width, cv.height);
         ctx.moveTo(150, 0);
         ctx.lineTo(150, 150);
+        ctx2.moveTo(0, 150);
+        ctx2.lineTo(300, 150);
         ctx.stroke();
+        ctx2.stroke();
        
       } 
       
