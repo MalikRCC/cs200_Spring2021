@@ -6,9 +6,15 @@
       function webpage()
       {
         var cv = document.getElementById("litCanvas");
+        var ctx = cv.getContext("2d");
         cv.style.width=300;
         cv.style.height=300;
         cv.style.backgroundColors="red";
+        
+        ctx.moveTo(0, 0);
+        ctx.lineTo(200, 100);
+        ctx.stroke();
+   
       } 
     </script>
   </head>
