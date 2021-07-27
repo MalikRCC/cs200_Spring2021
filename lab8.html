@@ -9,9 +9,24 @@
         cv.style.width=300;
         cv.style.height=300;
         cv.style="border:1px solid #000000;"
-        cvLeft = cv.offsetLeft + elem.clientLeft,
-        cvTop = cv.osetTop + elem.clientTop,
-        cv.addEventListener("onclick", function(moveMouse);
+        var cvLeft = cv.offsetLeft + cv.clientLeft,
+        cvTop = cv.offsetTop + cv.clientTop,
+        context = cv.getContext('2d'),
+        elements = [];
+         
+        cv.addEventListener('click', function(moveMouse) {
+           var x = cv.pageX - cvLeft,
+               y = cv.pageY - cvTop;
+        
+           elements.forEach(function(element) {
+               if (y > element.top && y < element.top + element.height 
+                  && x > element.left && x < element.left + element.width) {
+                  alert('clicked an element');
+          }
+      });
+
+   }, false);
+          
         
         var ctx = cv.getContext("2d");
         ctx.fillStyle = 'teal';
@@ -23,13 +38,7 @@
        
       } 
       
-      function moveMouse(event)
-      {
-        cv_x = event.pageX;
-        cv_y = event.pageY;
-        alert("X=" + cv_x + "Y=" + cv_y);
-      }
-     
+    
     </script>
   </head>
   <body onload="webpage()">
