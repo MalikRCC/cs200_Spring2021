@@ -18,8 +18,9 @@
         var x1 = 100;
         var y1 = 150;
          
+       cv.addEventListener('click', onmouseve, false);
        var example = document.getElementById('example'); 
-       example.onmousemove = function(e) { 
+       example.onmousemove = function onmousemove(e) { 
        var x = e.pageX - this.offsetLeft; 
        var y = e.pageY - this.offsetTop; 
        }
