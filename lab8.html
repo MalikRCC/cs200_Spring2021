@@ -14,6 +14,9 @@
         var ctx = cv.getContext("2d");
         ctx.fillStyle = 'teal';
         ctx.fillRect(0, 0, cv.width, cv.height);
+        
+        var cordx1;
+        var cordy1;
       }
        
        function click()
@@ -28,7 +31,11 @@
         
         window.onlick = function()
         {
-          document.getElementById('output').innerhtml = "("+event.clientX+"," + event.clientY+")";
+          if ((event.clientX<301)&&(event.clientY<301)){
+             cordx2=cordx1-event.clientX;
+             cordy2=cordy1-event.clientY;
+             document.getElementById("output").innerhtml = "("+event.clientX+"," + event.clientY+")";
+             document.getElementById("distance").innerHtml = "{"+cordx2+"," + "+cordy2+")";
         }
      </script>
   </head>
