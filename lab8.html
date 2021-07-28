@@ -15,8 +15,8 @@
         ctx.fillStyle = 'teal';
         ctx.fillRect(0, 0, cv.width, cv.height);
         
-        var cordx1;
-        var cordy1;
+        var coorx1;
+        var coory1;
       }
        
        function click()
@@ -31,11 +31,15 @@
         
         window.onlick = function()
         {
+          var x = event.clientX;
+          var y = event.clientY;
+          var coor = "X coords: " + x + ", Y coords: " + y;
+          document.getElementById("demo").innerHTML = coor;
           if ((event.clientX<301)&&(event.clientY<301)){
-             cordx2=cordx1-event.clientX;
-             cordy2=cordy1-event.clientY;
+             coorx2=coorx1-event.clientX;
+             coory2=coory1-event.clientY;
              document.getElementById("output").innerhtml = "("+event.clientX+"," + event.clientY+")";
-             document.getElementById("distance").innerHtml = "("+cordx2+"," + cordy2+")";
+             document.getElementById("distance").innerHtml = "("+coorx2+"," + coory2+")";
         }
           else
           {
@@ -50,7 +54,7 @@
          </canvas><br>
          
    <input type="button" value="reset!" onclick="reset()"></input>
-   <p id="instructions">
+   <p id=demo>
     <p>
       
     <p id="output">
