@@ -35,7 +35,10 @@
         
         window.onlick = function()
         {
-          var x = instanceOfMouseEvent.clientX
+          var x = instanceOfMouseEvent.clientX;
+          return x;
+          var y = instanceOfMouseEvent.clientY;
+          return y;
           if ((event.clientX<301)&&(event.clientY<301)){
              coorx2=coorx1-event.clientX;
              coory2=coory1-event.clientY;
