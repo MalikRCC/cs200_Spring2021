@@ -18,11 +18,11 @@
         var x1 = 100;
         var y1 = 150;
          
-       cv.addEventListener('mousemove', function(e) {
+       cv.addEventListener('mousemove', onmousemove) {
           var example = document.getElementById('example'); 
             example.onmousemove = function(e) { 
-         var a = e.pageX - this.offsetLeft; 
-         var b = e.pageY - this.offsetTop; 
+         var x = e.pageX - this.offsetLeft; 
+         var y = e.pageY - this.offsetTop; 
          }
        });
       }
