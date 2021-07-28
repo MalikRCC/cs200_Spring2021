@@ -40,12 +40,20 @@
              coory2=coory1-event.clientY;
              document.getElementById("output").innerhtml = "("+event.clientX+"," + event.clientY+")";
              document.getElementById("distance").innerHtml = "("+coorx2+"," + coory2+")";
+            
+            alert(
+          "clientX value: " + evt.clientX + "\n" +
+          "clientY value: " + evt.clientY + "\n"
+        );
+      
         }
           else
           {
             
           }
         }
+      
+        
      </script>
   </head>
   <body onload="webpage()" onclick="click()">
