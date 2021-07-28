@@ -15,27 +15,33 @@
         ctx.fillStyle = 'teal';
         ctx.fillRect(0, 0, cv.width, cv.height);
        
-        var x1 = 100;
-        var y1 = 150;
-         
-       cv.addEventListener('click', function(e) {
-         var x = e.pageX - this.offsetLeft; 
-         var y = e.pageY - this.offsetTop; 
-         });
+       function click()
+        {
        
-      }
-         
-
-         
-       
-       
-    
-         
+        }
         
-      
+        function reset()
+        {
+          location.reload();
+        }
+        
+        window.onlick = function()
+        {
+          document.getElementById('output').innerhtml = "("+event.clientX+"," + event.clientY+")";
+        }
      </script>
   </head>
-  <body onload="webpage()">
-        <canvas id="cv_1"></canvas>
+  <body onload="webpage()" onclick="click()">
+        <canvas id="cv_1" onclick ="click()">
+         
+         </canvas><br>
+         
+   <input type="button" value="reset!" onclick="reset()"></input>
+   <p id="instructions">
+    <p>
+      
+    <p id="output">
+    </p>
+
     </body>
 </html>
