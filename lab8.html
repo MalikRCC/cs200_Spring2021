@@ -17,6 +17,10 @@
         
         var coorx1;
         var coory1;
+        var x = event.clientX;
+        var y = event.clientY;
+        var coor = "X coords: " + x + ", Y coords: " + y;
+        document.getElementById("demo").innerHTML = coor;
       }
        
        function click()
@@ -31,10 +35,6 @@
         
         window.onlick = function()
         {
-          var x = event.clientX;
-          var y = event.clientY;
-          var coor = "X coords: " + x + ", Y coords: " + y;
-          document.getElementById("demo").innerHTML = coor;
           if ((event.clientX<301)&&(event.clientY<301)){
              coorx2=coorx1-event.clientX;
              coory2=coory1-event.clientY;
