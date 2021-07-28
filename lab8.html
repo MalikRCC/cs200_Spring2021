@@ -11,7 +11,9 @@
         cv.style.width=300;
         cv.style.height=300;
         cv.style="border:1px solid #000000;"
-        cv.stle.backgroundColor="teal";
+        var ctx = cv.getContext("2d");
+        ctx.fillStyle = 'teal';
+        ctx.fillRect(0, 0, cv.width, cv.height);
        
         var x1 = 100;
         var y1 = 150;
