@@ -11,47 +11,20 @@
         cv.style.width=300;
         cv.style.height=300;
         cv.style="border:1px solid #000000;"
-        cvLeft = cv.offsetLeft + cv.clientLeft,
-        cvTop = cv.offsetTop + cv.clientTop,
-        context = cv.getContext('2d'),
-        elements = [];
-        
+       
         var x1 = 100;
         var y1 = 150;
          
-        function diff (num1, num2) {
-              if (num1 > num2) {
-               return (num1 - num2);
-               } else {
-                return (num2 - num1);
-                  }
-                 };
-        
-        cv.addEventListener('click',  function dist (x1, y1, x2, y2) {
-        var deltaX = diff(x1, x2);
-        var deltaY = diff(y1, y2);
-        var dist = Math.sqrt(Math.pow(deltaX, 2) + Math.pow(deltaY, 2));
-        return (dist);
+       var example = document.getElementById('example'); 
+example.onmousemove = function(e) { 
+    var x = e.pageX - this.offsetLeft; 
+    var y = e.pageY - this.offsetTop; 
+}
     });
-          
-   
-          
-        
-        var ctx = cv.getContext("2d");
-        ctx.fillStyle = 'teal';
-        ctx.fillRect(0, 0, cv.width, cv.height);
-        ctx.moveTo(150, 0);
-        ctx.lineTo(150, 150);
-        ctx.stroke();
-        
+         
         
       }
-    
-       
-       
-      
-    
-    </script>
+     </script>
   </head>
   <body onload="webpage()">
         <canvas id="cv_1"></canvas>
