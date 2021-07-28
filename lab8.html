@@ -18,13 +18,14 @@
         var x1 = 100;
         var y1 = 150;
          
-       cv.addEventListener('click', false);
+       cv.addEventListener('click');
        
        var example = document.getElementById('example'); 
        example.onmousemove = function(e) { 
        var x = e.pageX - this.offsetLeft; 
        var y = e.pageY - this.offsetTop; 
        }
+      });
 
     
          
