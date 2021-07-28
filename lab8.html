@@ -15,15 +15,16 @@
         cvTop = cv.offsetTop + cv.clientTop,
         context = cv.getContext('2d'),
         elements = [];
-         
-        cv.addEventListener('click', function(moveMouse) {
-           var x = cv.pageX - cvLeft,
-               y = cv.pageY - cvTop;
         
-           elements.forEach(function(element) {
-               if (y > element.top && y < element.top + element.height 
-                  && x > element.left && x < element.left + element.width) {
-                  alert("clicked an element");
+        var x1 = 100;
+        var y1 = 150;
+         
+        cv.addEventListener('click',  function dist (x1, y1, x2, y2) {
+         var deltaX = diff(x1, x2);
+         var deltaY = diff(y1, y2);
+         var dist = Math.sqrt(Math.pow(deltaX, 2) + Math.pow(deltaY, 2));
+         return (dist);
+};
           }
       });
 
