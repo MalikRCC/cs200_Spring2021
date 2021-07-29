@@ -1,7 +1,9 @@
 <html>
   <head>
   <style>
-    #turnRed{color:black;}
+    #turnYellow{color:black;}
+    
+    #turnsBlack{color:black;}
   </style>
   <script>
      function plzWork()
@@ -13,8 +15,20 @@
     function colorChange()
       {
        tmp = document.getElementById("first");
-       tmp.style.color="red";
+       tmp.style.color="yellow";
       }
+    
+    function plzWork2()
+    {
+      var hit = document.getElemntByID("second");
+      hit.onclick = function(){colorChange2();};
+    }
+    
+    function colorChange2()
+    {
+      tmp = document.getElementById("second");
+      tmp.style.color="black";
+    }
     
   </script>
   </head>
@@ -28,6 +42,9 @@
     </p>
     
     <button onclick="colorChange()">Day</button>
-    <body onload="plzWork()" id = "first">Alpha</button>
+    <body onload="plzWork()" id = "first"></button>
+    
+    <button onlick="colorChange2()">Night</button>
+    <body onload="plzWork2()" id = "second"></button>
   </body>
 </html>
