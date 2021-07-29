@@ -1,45 +1,42 @@
 <html>
   <head>
   <style>
-     .box {
-        background: #9E9E9E;
-        border: black 1px solid;
-        width: 180px;
-        height: 180px;
-        margin: 0 auto;
-        margin-top: 0;
-        cursor: pointer;
-        display: inline-block;
-        float: left;
-    }
+    .cell {
+  height: 50px;
+  width: 50px;
+  background-color: #999;
+  display: inline-block;
+}
 
-    .row {
-        display: block;
-        float:left;
-        width:100%;
+.cell:nth-child(3n) {
+  background-color: #F00;
+  /* what property should I use to get a line break after this element? */
+}
+
+.cell:nth-child(3n)::after {
+  display: inline;
+  content: '\A';
+  white-space: pre;
+}
+
+
   </style>
   <script>
-    function Board() {
-        for (var i = 0; i < 3; i++) {
-            var row = document.createElement('div');
-            row.className = "row";
-            for (var j = 0; j < 3; j++) {
-                var box = document.createElement('div');
-                box.className = "box";
-                row.appendChild(box);
-            }                
-            document.getElementById('boxParent').appendChild(row);
-        }
-    }
+    
 
     </script>
   </head>
   <body>
-    <div>
-    <div id="boxParent"></div>
-   </div>
-    <div>
-    <button onclick="Board();">MAKE Board</button>
-     </div>
+    <div class="grid">
+  <div class="cell"></div>
+  <div class="cell"></div>
+  <div class="cell"></div>
+  <div class="cell"></div>
+  <div class="cell"></div>
+  <div class="cell"></div>
+  <div class="cell"></div>
+  <div class="cell"></div>
+  <div class="cell"></div>
+</div>
   </body>
 </html>
