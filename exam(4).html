@@ -1,24 +1,24 @@
 <html>
   <head>
   <style>
-    .cell {
-  height: 50px;
-  width: 50px;
-  background-color: #999;
-  display: inline-block;
+    .game-board {
+    display: grid;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 200px 200px 200px;
 }
 
-.cell:nth-child(3n) {
-  background-color: #F00;
-  /* what property should I use to get a line break after this element? */
+body {
+  display: flex;
+  justify-content: center;
 }
-
-.cell:nth-child(3n)::after {
-  display: inline;
-  content: '\A';
-  white-space: pre;
+.box {
+  background: #444;
+  border: 1px solid #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #AAA;
 }
-
 
   </style>
   <script>
@@ -27,16 +27,16 @@
     </script>
   </head>
   <body>
-    <div class="grid">
-  <div class="cell"></div>
-  <div class="cell"></div>
-  <div class="cell"></div>
-  <div class="cell"></div>
-  <div class="cell"></div>
-  <div class="cell"></div>
-  <div class="cell"></div>
-  <div class="cell"></div>
-  <div class="cell"></div>
+   <div class="game-board">
+  <div class="box">200px x 200px</div>
+  <div class="box">200px x 200px</div>
+  <div class="box">200px x 200px</div>
+  <div class="box">200px x 200px</div>
+  <div class="box">200px x 200px</div>
+  <div class="box">200px x 200px</div>
+  <div class="box">200px x 200px</div>
+  <div class="box">200px x 200px</div>
+  <div class="box">200px x 200px</div>
 </div>
   </body>
 </html>
